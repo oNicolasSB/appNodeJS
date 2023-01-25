@@ -1,0 +1,6 @@
+<form action="/admin/categorias/delete" method="post">
+    <h1>Tem certeza que deseja excluir a categoria {{categoria.nome}}?</h1>
+    <input type="hidden" name="id" value="{{categoria._id}}">
+    <button type="submit" class="btn btn-danger">Sim</button>
+    <a href="/admin/categorias" class="btn btn-primary">Não</a>
+</form>
