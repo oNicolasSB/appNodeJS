@@ -1,0 +1,6 @@
+<form action="/admin/postagens/delete" method="post">
+    <h1>Tem certeza que deseja excluir a postagem {{postagem.nome}}?</h1>
+    <input type="hidden" name="id" value="{{postagem._id}}">
+    <button type="submit" class="btn btn-danger">Sim</button>
+    <a href="/admin/postagens" class="btn btn-primary">Não</a>
+</form>
